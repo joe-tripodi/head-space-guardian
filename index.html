@@ -1,3 +1,4 @@
+
 <div id="page-container">
   <div class="content-container">
     <div class="heading-container">
@@ -6,9 +7,34 @@
     </div>
     <button id="no-button" class="action-button">NO</button>
     <button id="yes-button" class="action-button">yes</button>
-    <img id="skip-icon" src="public/skip.svg" height="20" width="20"></img>
+    <img id="skip-icon" style="cursor:pointer;" src="public/skip.svg" height="20" width="20"></img>
   </div>
 </div>
+
+<script>
+  const no_button = document.getElementById("no-button");
+  const yes_button = document.getElementById("yes-button");
+  const skip_button = document.getElementById("skip-icon");
+
+  no_button.addEventListener(
+    "click",
+    function(){
+      console.log("User has selected NO");
+    }
+  );
+  yes_button.addEventListener(
+    "click",
+    function(){
+      console.log("User has selected YES");
+    }
+  );
+  skip_button.addEventListener(
+    "click",
+    function(){
+      console.log("User has selected SKIP");
+    }
+  );
+</script>
 
 <style>
 
@@ -21,12 +47,18 @@
   font-family: 'Julius', sans-serif;
 }
 
+#page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
 .content-container {
   display: flex;
   flex-direction: column;
   gap: 100px;
   align-items: end;
-  padding-right: 50%;
   padding-top: 2em;
   padding-bottom: 2em;
   padding-left: 2em;
@@ -58,6 +90,7 @@
 }
 
 .action-button {
+  cursor: pointer;
   font-family: 'Julius', sans-serif;
   width: 5em;
   border: none;
