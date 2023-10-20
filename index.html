@@ -1,0 +1,79 @@
+<div id="page-container">
+  <div class="content-container">
+    <div class="heading-container">
+      <h1 class="heading" >Do you wish to continue?</h1>
+      <div class="rectangle"></div>
+    </div>
+    <button id="no-button" class="action-button">NO</button>
+    <button id="yes-button" class="action-button">yes</button>
+    <img id="skip-icon" src="public/skip.svg" height="20" width="20"></img>
+  </div>
+</div>
+
+<style>
+
+@font-face {
+   font-family: 'Julius';
+     src: url('public/SignikaNegative-VariableFont_wght.ttf') format('truetype'), /* URL to the WOFF font file */
+}
+
+.body {
+  font-family: 'Julius', sans-serif;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: end;
+  padding-right: 50%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 400px;
+}
+
+.heading {
+  font-family: 'Julius', sans-serif;
+  font-size: 56px;
+  background-color: transparent;
+  color: #31493C;
+}
+
+.rectangle {
+  top: 68px;
+  position: absolute;
+  height: 50%;
+  right: 0px;
+  width: 94%;
+  background-color: #CFCBCA;
+  z-index: -1;
+}
+
+.action-button {
+  font-family: 'Julius', sans-serif;
+  width: 5em;
+  border: none;
+}
+
+#yes-button {
+  background-color: #31493C;
+  color: #CFCBCA;
+  font-size: 23px;
+}
+
+#no-button {
+  font-weight: bold;
+  background-color: #8C271E;
+  color: #CFCBCA;
+  font-size: 33px;
+}
+</style>
+
