@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Attention Guardian",
+  "description": "Consciously protect your attention.",
+  "version": "0.0",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess"
+  ],
+    "web_accessible_resources": [{
+    "resources": ["index.html"],
+    "matches": ["<all_urls>"]
+  }],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules_1.json"
+    }]
+  }
+}
+

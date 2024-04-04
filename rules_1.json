@@ -1,0 +1,18 @@
+[{
+  "id": 1,
+  "priority": 4,
+  "action": { "type": "redirect", "redirect": { "extensionPath": "/index.html" } },
+  "condition": {
+    "urlFilter": "||youtube.*/|",
+    "resourceTypes": ["main_frame"]
+  }
+},
+{
+  "id": 2,
+  "priority": 4,
+  "action": { "type": "redirect", "redirect": { "extensionPath": "/index.html" } },
+  "condition": {
+    "urlFilter": "||facebook.com/*|",
+    "resourceTypes": ["main_frame"]
+  }
+}]
